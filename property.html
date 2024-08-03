@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOLX Property</title>
+    <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="row justify-content-center align-items-center py-2 bg-white">
+            <div class="col-6 col-md-2 text-center text-md-start">
+                <div class="logo">HOLX</div>
+            </div>
+            <div class="col-12 col-md-8 d-flex align-items-center mt-2 mt-md-0">
+                <div class="input-group">
+                    <div style="margin-right: 5px;" class="input-group-prepend">
+                        <span class="input-group-text bg-light border-0" id="basic-addon1">
+                            <span>Pakistan</span>
+                            <span>&#9662;</span>
+                        </span>
+                    </div>
+                    <input id="inp" type="text" class="form-control" placeholder="Find ....." aria-label="Search"
+                        aria-describedby="basic-addon1">
+                    <button id="btn" class="btn btn-dark">
+                        <img width="10px" src="./Images/search-icon-1023x1024-cz5u4134.png" alt="Search">
+                    </button>
+                </div>
+            </div>
+            <div class="col-6 col-md-2 text-center text-md-end mt-2 mt-md-0">
+                <img hidden
+                    style=" display: inline-block;width: 50px; border-radius: 25px; height: 50px; margin-top: 5px;margin-right: 10px;margin-bottom: 5px;"
+                    id="profile" src="" alt="">
+                <button id="signin" class="btn btn-primary">Login</button>
+                <button id="sell" class="btn btn-primary sell-button">+ SELL</button>
+            </div>
+        </div>
+        <div class="row bg-light py-2">
+            <div class="col text-center">
+                <nav>
+                    <a style="text-decoration: none;" href="#" id="all-categories"
+                        class="text-dark font-weight-bold">ALL CATEGORIES &#9662;</a>
+                </nav>
+            </div>
+        </div>
+        <div class="categories-dropdown" id="categories-dropdown">
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <h3>Mobiles</h3>
+                    <a href="mobiles.html">Mobile Phones</a>
+                    <a href="mobiles.html">Accessories</a>
+                    <a href="mobiles.html">Smart Watches</a>
+                    <a href="mobiles.html">Tablets</a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h3>Vehicles</h3>
+                    <a href="vehicles.html">Cars</a>
+                    <a href="vehicles.html">Buses, Vans & Trucks</a>
+                    <a href="vehicles.html">Rickshaw & Chingchi</a>
+                    <a href="vehicles.html">Tractors & Trailers</a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h3>Bikes</h3>
+                    <a href="bikes.html">Motorcycles</a>
+                    <a href="bikes.html">Bicycles</a>
+                    <a href="bikes.html">Bikes Accessories</a>
+                    <a href="bikes.html">Scooters</a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h3>Property</h3>
+                    <a href="property.html">Rent</a>
+                    <a href="property.html">Flats</a>
+                    <a href="property.html">Banglows</a>
+                    <a href="property.html">Farms</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <button onclick="location.href ='index.html'" class="btn btn-warning m-4">Move To Main</button>
+    <br><br>
+    <div id="set" style="width: 75%; height: 45vh;margin: auto;border-radius: 10px;">
+        <img style="width: 100%; height: 100%;border-radius: 10px;" src="./Images/Screenshot 2024-07-30 110948.png" alt="">
+    </div>
+    <div class="m-4" style="display: flex; justify-content: center; align-items: center;"><h1>PROPERTY</h1></div>
+
+    <div class="row" id="property"></div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="app.js"></script>
+    <script type="module" src="./Js files/property.js"></script>
+
+</body>
+
+</html>
