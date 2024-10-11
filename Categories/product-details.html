@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holx Product Details</title>
+    <link rel="stylesheet" href="../Css files/product-details.css">
+    <link rel="shortcut icon" href="../Images/logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="product-details-container">
+        <div class="product-left">
+            <div class="product-image">
+                <img id="prod-image" src="" alt="Product Image">
+            </div>
+            <div class="product-info">
+                <h1 id="prod-name" class="product-title"></h1>
+                <p id="prod-price" class="product-price"></p>
+
+                </p>
+            </div>
+        </div>
+        <div class="product-right">
+            <div class="product-specifications">
+                <h3>Seller Details:</h3>
+                <ul>
+                    <li>Name: <span id="seller-name"></span></li>
+                    <li>Contact: <span id="seller-contact"></span></li>
+                    <li>address: <span id="seller-address"></span></li>
+                </ul>
+            </div>
+            <div class="product-reviews">
+                <h3>Customer Reviews:</h3>
+                <p>⭐⭐⭐⭐☆ (4.5/5)</p>
+                <p>"This product is amazing! It exceeded my expectations."</p>
+                <p>"Great value for money. I would highly recommend it to others."</p>
+            </div>
+            <div>
+
+                <button id="cart" class="add-to-cart">Add to Cart</button>
+                <button id="back" class="add-to-carts">Back</button>
+            </div>
+        </div>
+    </div>
+    <p style="background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    gap: 40px;padding: 20px;" id="prod-description" class="product-description">
+
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="../Js files/details.js"></script>
+</body>
+
+</html>

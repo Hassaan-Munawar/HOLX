@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOLX Form</title>
+    <link rel="shortcut icon" href="../Images/logo.png" type="image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Css files/form.css">
+</head>
+<body>
+    <div class="loader" id="loader"></div>
+    <div id="body" class="container">
+        <button onclick="window.history.back()" class="btn btn-success my-4"><i class="fa-solid fa-arrow-left"></i> Back</button>
+        <button onclick="location.href = 'yourproducts.html'" style="float: right;" class="btn btn-warning my-4">Your Products</button>
+        <h2 style="font-weight: bolder;">Product Listing Form</h2>
+        <div>
+            <div class="form-group">
+                <label>Category</label>
+                <select required class="form-control" id="select">
+                    <option selected disabled value="">Select Category</option>
+                    <option value="1">Bikes</option>
+                    <option value="2">Mobiles</option>
+                    <option value="3">Property</option>
+                    <option value="4">Vehicles</option>
+                    <option value="5">Toys</option>
+                    <option value="6">Animals</option>
+                    <option value="7">Machines</option>
+                    <option value="8">Bags</option>
+                    <option value="9">Clothes</option>
+                    <option value="10">Books</option>
+                    <option value="11">Chairs</option>
+                    <option value="12">Tables</option>
+                    <option value="13">Accessories</option>
+                    
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Product Name</label>
+                <input type="text" class="form-control" id="productName" required>
+            </div>
+            <div class="form-group">
+                <label>Product Description</label>
+                <textarea class="form-control" id="productDesc" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label>Product Price in dollars</label>
+                <input type="number" class="form-control" id="productPrice" required>
+            </div>
+            <div class="form-group">
+                <label>Seller Name</label>
+                <input disabled type="text" class="form-control" id="sellerName">
+            </div>
+            <div class="form-group">
+                <label>Seller Contact Number</label>
+                <input type="tel" class="form-control" id="sellerContact" required>
+            </div>
+            <div class="form-group">
+                <label>Seller Address</label>
+                <input type="text" class="form-control" id="sellerAddress" required>
+            </div>
+            <div class="form-group">
+                <label>Product Image in Landscape</label><br>
+                <input required type="file" id="productImage">
+            </div>
+            <div class="form-group">
+                <button id="form-btn" class="btn btn-primary btn-block">Submit</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="../Js files/form.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,128 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.product-details-container {
+    display: flex;
+    max-width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    gap: 40px;
+}
+
+.product-left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.product-info {
+    text-align: left;
+}
+
+.product-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-price {
+    font-size: 24px;
+    color: #27ae60;
+}
+
+.product-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.product-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.product-specifications h3, .product-reviews h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-specifications ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.product-specifications ul li, .product-reviews p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.add-to-cart {
+    background-color: #27ae60;
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.add-to-cart:hover {
+    background-color: #2ecc71;
+}
+.add-to-carts {
+    background-color: rgba(255, 0, 0, 0.719);
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.add-to-carts:hover {
+    background-color: rgba(255, 0, 0, 0.573);
+}
+@media (max-width: 768px) {
+    .product-details-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+.product-image{
+    height: auto;
+}
+    .product-right {
+        flex-direction: column;
+    }
+}
+
