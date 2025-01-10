@@ -5,13 +5,13 @@ import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "https://w
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyANjq0oxSJawr3aKdnLRNdBmOHze5SKLvI",
-    authDomain: "holx-8e54d.firebaseapp.com",
-    projectId: "holx-8e54d",
-    storageBucket: "holx-8e54d.appspot.com",
-    messagingSenderId: "110770706324",
-    appId: "1:110770706324:web:9edd75b7825b451e91a181",
-    measurementId: "G-Q8MWSJX23Y"
+    apiKey: "",
+    authDomain: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
 };
 
 const app = initializeApp(firebaseConfig);
